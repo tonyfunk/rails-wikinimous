@@ -1,0 +1,12 @@
+<figure class="text-center my-5">
+  <figcaption class="blockquote-footer">
+    <p><%= @article.content %></p>
+    </figcaption>
+  <blockquote class="blockquote">
+    <p><%= @article.title %></p>
+  </blockquote>
+</figure>
+<div class = "d-grid gap-2 col-6 mx-auto">
+<%= link_to "Edit article", edit_article_path, class: "btn btn-primary text-center"%>
+<%= link_to "Back to list", articles_path, class: "btn btn-primary " %>
+</div>
